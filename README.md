@@ -2,14 +2,14 @@
 <p align="center">Updated on Dec 11th, 2020</p>
 
 ## Detailed Description
-This application is for placing orders for a bakery. It can provide the user with two options currently and will allow for a discount per item to be applied when it calculates the total based .
+This is an MVC web application to help manage employees (stylists) and their clients. The User should be able to add a list of stylists working at the salon, and for each stylist, add clients who see that stylist. The stylists have specific specialties, so each client can only see (belong to) a single stylist.
 
 ## KNOWN BUGS
 
 # Setup/Installation Requirements .Net Installation
 
 ## GIT HUB
-- repository location (https://github.com/BrianSturgis/week7project
+- repository location (https://github.com/BrianSturgis/JanWeek9Project.solution
 - open through a git terminal or clone editor.
 - got to repo location.
 - using git commands clone to local repo or click "download" and unpack on machine
