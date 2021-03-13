@@ -5,6 +5,7 @@
 This is an MVC web application to help manage employees (stylists) and their clients. The User should be able to add a list of stylists working at the salon, and for each stylist, add clients who see that stylist. The stylists have specific specialties, so each client can only see (belong to) a single stylist.
 
 ## KNOWN BUGS
+- none as of yet
 
 # Setup/Installation Requirements .Net Installation
 
@@ -41,7 +42,6 @@ Open the file and follow the steps provided by the installer for your OS.
 Confirm the installation is successful by opening a new Windows PowerShell window and running the command dotnet --version. You should see something a response like this (version numbers do not need to be the same): 2.2.105
 This means .NET and C# are installed and our computer recognizes the dotnet command.
 
-##
 Once the project has been cloned to your computer and you have all the necessary items on your local computer, open the project in the application of your choice (Visual Code Studio was used and is recommended by the application builder), and run the following...
 
 - Navigate to the project folder, JanWeek8Project.Solution, on your Terminal or CMD.
@@ -62,11 +62,6 @@ Then run the following command: $ dotnet test.
 ## Support and contact details
 email Brian Sturgis @ <sturujisu@gmail.com>
 
-
-## TESTS
-```JS
-
-```
 
 ## Technologies Used
 
@@ -89,15 +84,3 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 
 Copyright (c) 2020 **Brian Micheal Sturgis**
-
-
-
-
-```C#
-
-
-
-
-
-
-```
