@@ -3,16 +3,22 @@
 }
 
 @model HairSalon.Models.Client
-<h4>Add a new client</h4>
+<div class="homeDiv">
+  <h4>Add a new Client</h4>
 
-@using (Html.BeginForm())
-{
-  @Html.LabelFor(model => model.Name)
-  @Html.TextBoxFor(model => model.Name)
+  @using (Html.BeginForm())
+  {
+      @Html.LabelFor(model => model.Name)
+      @Html.TextBoxFor(model => model.Name)
+      @Html.LabelFor(model => model.Number)
+      @Html.TextBoxFor(model => model.Number)
 
-  @Html.LabelFor(model => model.Stylist)
-  @Html.DropDownList("StylistId")
+      @Html.LabelFor(model => model.Stylist)
+      @Html.DropDownList("StylistId")
 
-  <input type="submit" value="Add new client" class="btn btn-default" />
-}
-<p>@Html.ActionLink("Show all stylists", "Index", "Stylists")</p>
+      <input type="submit" value="Click here to add client" class="btn btn-default" />
+
+      <p>NOTE: IF THERE IS NOT A STYLIST IN THE DROP DOWN MENU TO CHOOSE FROM, YOU WILL NOT BE ABLE TO ADD A CLIENT. YOU CAN ONLY ADD A CLIENT TO AN EXISITING STYLIST IN THE DROP DOWN MENU. IF THERE ARENT ANY, PLEASE NAVIGATE BACK TO THE HOME PAGE AND THEN TO "ADD STYLIST"</p>
+  }
+  <p>@Html.ActionLink("Show all clients","Clients" ,"Show")</p>
+</div>
