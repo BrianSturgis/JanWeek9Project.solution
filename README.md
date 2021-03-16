@@ -6,7 +6,7 @@ This is an MVC web application to help manage employees (stylists) and their cli
 
 ## KNOWN BUGS
 - none as of yet
-
+tnet
 # Setup/Installation Requirements .Net Installation
 
 ## GIT HUB
