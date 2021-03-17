@@ -10,7 +10,7 @@ This is an MVC web application to help manage employees (stylists) and their cli
 - As the salon owner, I need to be able to add new clients to a specific stylist. I should not be able to add a client if no stylists have been added.
 
 ## KNOWN BUGS
-- none as of yet
+- the repo name is meant to end in .Solution and the word is spelled .solution.
 
 # Setup/Installation Requirements .Net Installation
 
