@@ -1,4 +1,5 @@
-<p align="center">Updated on Dec 11th, 2020</p>
+<p align="center"> Authored by Brian Sturgis</p>
+<p align="center">Updated on Dec 11th, 2021</p>
 
 ## Detailed Description
 This is an MVC web application to help manage employees (stylists) and their clients. The User should be able to add a list of stylists working at the salon, and for each stylist, add clients who see that stylist. The stylists have specific specialties, so each client can only see (belong to) a single stylist.  This is an assignment due to the Epicodus program in March of 2021.
@@ -40,8 +41,30 @@ This is an MVC web application to help manage employees (stylists) and their cli
     * **NOTE**: Do not touch the code in either ```obj``` directory.
 * To launch the program, run the terminal command: ```dotnet run```
 
-## Stretch goals
-- unity driven UI
+### Data Base set up
+- Confirm you have MySQL installed.
+- Confirm you have MySQL Workbench installed.
+- Open MySQL Workbench and select Local Instance 3306.
+- In the Administration tab, select Data Import/Restore.
+- Select Import from Self-Contained File.
+- Select the file brian_sturgis.sql from the JanWeek9Project.Solutions root directory.
+- Select New from the Default Schema to be Imported To section.
+- Choose a name for the database and select Ok.
+- Select Start Import.
+
+### MySQL Password Protection
+- Create a the following file: appsettings.json in production file root "HairSalon".
+- Add the following code: see snippet below
+```CS
+{
+  "ConnectionStrings": {
+      "DefaultConnection": "Server=localhost;Port=3306;database=[YOUR_DATABASE];uid=root;pwd=[YOUR_PASSWORD];"
+  }
+}
+```
+- [YOUR_DATABASE] must match the database name you chose to import above.
+- [YOUR_PASSWORD] must match your local MySQL server password.
+- The appsettings.json file is to be included in the .gitignore file.
 
 ## Support and contact details
 email Brian Sturgis @ <sturujisu@gmail.com>
@@ -57,6 +80,8 @@ email Brian Sturgis @ <sturujisu@gmail.com>
 * coffee
 * .NET 5
 * ASP.NET Core
+* Entity Framework
+* MySQL Workbench 8.0.15
 
 ### License
 

@@ -53,24 +53,24 @@ namespace HairSalon.Controllers
     [HttpPost]
     public ActionResult Edit(Client client)
     {
-        _db.Entry(client).State = EntityState.Modified;
-        _db.SaveChanges();
-        return RedirectToAction("Index");
+      _db.Entry(client).State = EntityState.Modified;
+      _db.SaveChanges();
+      return RedirectToAction("Index");
     }
 
     public ActionResult Delete(int id)
     {
-        var thisclient = _db.Clients.FirstOrDefault(client => client.ClientId == id);
-        return View(thisclient);
+      var thisclient = _db.Clients.FirstOrDefault(client => client.ClientId == id);
+      return View(thisclient);
     }
 
     [HttpPost, ActionName("Delete")]
     public ActionResult DeleteConfirmed(int id)
     {
-        var thisClient = _db.Clients.FirstOrDefault(client => client.ClientId == id);
-        _db.Clients.Remove(thisClient);
-        _db.SaveChanges();
-        return RedirectToAction("Index");
+      var thisClient = _db.Clients.FirstOrDefault(client => client.ClientId == id);
+      _db.Clients.Remove(thisClient);
+      _db.SaveChanges();
+      return RedirectToAction("Index");
     }
   }
 }
