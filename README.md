@@ -4,7 +4,7 @@
 ## Detailed Description
 This is an MVC web application to help manage employees (stylists) and their clients. The User should be able to add a list of stylists working at the salon, and for each stylist, add clients who see that stylist. The stylists have specific specialties, so each client can only see (belong to) a single stylist.  This is an assignment due to the Epicodus program in March of 2021.
 
-## Objectives (ass quoted from the assignment)
+## Objectives (as quoted from the assignment)
 - As the salon owner, I need to be able to see a list of all stylists.
 - As the salon owner, I need to be able to select a stylist, see their details, and see a list of all clients that belong to that stylist.
 - As the salon owner, I need to add new stylists to our system when they are hired.
