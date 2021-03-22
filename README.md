@@ -14,7 +14,6 @@ This is an MVC web application to help manage employees (stylists) and their cli
 - the repo name is meant to end in .Solution and the word is spelled .solution.
 
 # Setup/Installation Requirements .Net Installation
-
 ## GIT HUB
 - repository location (https://github.com/BrianSturgis/JanWeek9Project.solution
 - open through a git terminal or clone editor.
